@@ -1,0 +1,14 @@
+/home/yixiao/rpcIM/build/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/CMakeFiles/edit_cache.dir
+/home/yixiao/rpcIM/build/src/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/src/CMakeFiles/edit_cache.dir
+/home/yixiao/rpcIM/build/src/server/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/src/server/CMakeFiles/edit_cache.dir
+/home/yixiao/rpcIM/build/src/server/service/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/src/server/service/CMakeFiles/edit_cache.dir
+/home/yixiao/rpcIM/build/src/server/service/userservice/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/src/server/service/userservice/CMakeFiles/userservice.dir
+/home/yixiao/rpcIM/build/src/server/service/userservice/CMakeFiles/edit_cache.dir
+/home/yixiao/rpcIM/build/src/client/CMakeFiles/rebuild_cache.dir
+/home/yixiao/rpcIM/build/src/client/CMakeFiles/client.dir
+/home/yixiao/rpcIM/build/src/client/CMakeFiles/edit_cache.dir

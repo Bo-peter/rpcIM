@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/userservicemain.cpp.o -c /home/yixiao/rpcIM/src/server/service/userservice/userservicemain.cpp",
+  "file": "/home/yixiao/rpcIM/src/server/service/userservice/userservicemain.cpp"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/__/__/db/db.cpp.o -c /home/yixiao/rpcIM/src/server/db/db.cpp",
+  "file": "/home/yixiao/rpcIM/src/server/db/db.cpp"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/__/__/__/user.pb.cc.o -c /home/yixiao/rpcIM/src/user.pb.cc",
+  "file": "/home/yixiao/rpcIM/src/user.pb.cc"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/__/__/redis/redis.cpp.o -c /home/yixiao/rpcIM/src/server/redis/redis.cpp",
+  "file": "/home/yixiao/rpcIM/src/server/redis/redis.cpp"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/__/__/model/usermodel.cpp.o -c /home/yixiao/rpcIM/src/server/model/usermodel.cpp",
+  "file": "/home/yixiao/rpcIM/src/server/model/usermodel.cpp"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/server/service/userservice",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/userservice.dir/userservice.cpp.o -c /home/yixiao/rpcIM/src/server/service/userservice/userservice.cpp",
+  "file": "/home/yixiao/rpcIM/src/server/service/userservice/userservice.cpp"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/client",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/client.dir/main.cc.o -c /home/yixiao/rpcIM/src/client/main.cc",
+  "file": "/home/yixiao/rpcIM/src/client/main.cc"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/client",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/client.dir/__/user.pb.cc.o -c /home/yixiao/rpcIM/src/user.pb.cc",
+  "file": "/home/yixiao/rpcIM/src/user.pb.cc"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/client",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/client.dir/__/friends.pb.cc.o -c /home/yixiao/rpcIM/src/friends.pb.cc",
+  "file": "/home/yixiao/rpcIM/src/friends.pb.cc"
+}
+]

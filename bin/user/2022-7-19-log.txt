@@ -1,0 +1,6 @@
+17:6:25 =>[info] service_name:UserServiceRpc
+17:6:25 =>[info] method_name:Login
+17:6:25 =>[info] method_name:Register
+17:9:3 =>[info] service_name:UserServiceRpc
+17:9:3 =>[info] method_name:Login
+17:9:3 =>[info] method_name:Register

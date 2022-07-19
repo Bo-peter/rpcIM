@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package friends;
+
+option cc_generic_services = true;
+
+message ResultCode
+{
+    int32 errcode = 1; 
+    bytes errmsg = 2;
+}
+
+message AddFriendRequest
+{
+    int32 id =1;
+    int32 friendid = 2;
+}
+
+message AddFriendResponse
+{
+    ResultCode result = 1;
+}
+
+service FriendService{
+    rpc AddFriend(AddFriendRequest)returns(AddFriendResponse);
+}

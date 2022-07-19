@@ -1,0 +1,4 @@
+17:6:5 =>[info] service_name:FriendService
+17:6:5 =>[info] method_name:AddFriend
+17:8:50 =>[info] service_name:FriendService
+17:8:50 =>[info] method_name:AddFriend
