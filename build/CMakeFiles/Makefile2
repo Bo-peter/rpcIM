@@ -103,16 +103,22 @@ src/server/preinstall: src/server/service/preinstall
 
 # Convenience name for "all" pass in the directory.
 src/server/service/all: src/server/service/userservice/all
+src/server/service/all: src/server/service/friendservice/all
+src/server/service/all: src/server/service/chatservice/all
 
 .PHONY : src/server/service/all
 
 # Convenience name for "clean" pass in the directory.
 src/server/service/clean: src/server/service/userservice/clean
+src/server/service/clean: src/server/service/friendservice/clean
+src/server/service/clean: src/server/service/chatservice/clean
 
 .PHONY : src/server/service/clean
 
 # Convenience name for "preinstall" pass in the directory.
 src/server/service/preinstall: src/server/service/userservice/preinstall
+src/server/service/preinstall: src/server/service/friendservice/preinstall
+src/server/service/preinstall: src/server/service/chatservice/preinstall
 
 .PHONY : src/server/service/preinstall
 
@@ -141,7 +147,7 @@ src/server/service/userservice/preinstall:
 src/server/service/userservice/CMakeFiles/userservice.dir/all:
 	$(MAKE) -f src/server/service/userservice/CMakeFiles/userservice.dir/build.make src/server/service/userservice/CMakeFiles/userservice.dir/depend
 	$(MAKE) -f src/server/service/userservice/CMakeFiles/userservice.dir/build.make src/server/service/userservice/CMakeFiles/userservice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=5,6,7,8,9,10,11 "Built target userservice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=24,25,26,27,28,29,30 "Built target userservice"
 .PHONY : src/server/service/userservice/CMakeFiles/userservice.dir/all
 
 # Include target in all.
@@ -172,6 +178,116 @@ clean: src/server/service/userservice/CMakeFiles/userservice.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory src/server/service/friendservice
+
+# Convenience name for "all" pass in the directory.
+src/server/service/friendservice/all: src/server/service/friendservice/CMakeFiles/friendservice.dir/all
+
+.PHONY : src/server/service/friendservice/all
+
+# Convenience name for "clean" pass in the directory.
+src/server/service/friendservice/clean: src/server/service/friendservice/CMakeFiles/friendservice.dir/clean
+
+.PHONY : src/server/service/friendservice/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/server/service/friendservice/preinstall:
+
+.PHONY : src/server/service/friendservice/preinstall
+
+#=============================================================================
+# Target rules for target src/server/service/friendservice/CMakeFiles/friendservice.dir
+
+# All Build rule for target.
+src/server/service/friendservice/CMakeFiles/friendservice.dir/all:
+	$(MAKE) -f src/server/service/friendservice/CMakeFiles/friendservice.dir/build.make src/server/service/friendservice/CMakeFiles/friendservice.dir/depend
+	$(MAKE) -f src/server/service/friendservice/CMakeFiles/friendservice.dir/build.make src/server/service/friendservice/CMakeFiles/friendservice.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=17,18,19,20,21,22,23 "Built target friendservice"
+.PHONY : src/server/service/friendservice/CMakeFiles/friendservice.dir/all
+
+# Include target in all.
+all: src/server/service/friendservice/CMakeFiles/friendservice.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/server/service/friendservice/CMakeFiles/friendservice.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixiao/rpcIM/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 src/server/service/friendservice/CMakeFiles/friendservice.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixiao/rpcIM/build/CMakeFiles 0
+.PHONY : src/server/service/friendservice/CMakeFiles/friendservice.dir/rule
+
+# Convenience name for target.
+friendservice: src/server/service/friendservice/CMakeFiles/friendservice.dir/rule
+
+.PHONY : friendservice
+
+# clean rule for target.
+src/server/service/friendservice/CMakeFiles/friendservice.dir/clean:
+	$(MAKE) -f src/server/service/friendservice/CMakeFiles/friendservice.dir/build.make src/server/service/friendservice/CMakeFiles/friendservice.dir/clean
+.PHONY : src/server/service/friendservice/CMakeFiles/friendservice.dir/clean
+
+# clean rule for target.
+clean: src/server/service/friendservice/CMakeFiles/friendservice.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/server/service/chatservice
+
+# Convenience name for "all" pass in the directory.
+src/server/service/chatservice/all: src/server/service/chatservice/CMakeFiles/chatservice.dir/all
+
+.PHONY : src/server/service/chatservice/all
+
+# Convenience name for "clean" pass in the directory.
+src/server/service/chatservice/clean: src/server/service/chatservice/CMakeFiles/chatservice.dir/clean
+
+.PHONY : src/server/service/chatservice/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/server/service/chatservice/preinstall:
+
+.PHONY : src/server/service/chatservice/preinstall
+
+#=============================================================================
+# Target rules for target src/server/service/chatservice/CMakeFiles/chatservice.dir
+
+# All Build rule for target.
+src/server/service/chatservice/CMakeFiles/chatservice.dir/all:
+	$(MAKE) -f src/server/service/chatservice/CMakeFiles/chatservice.dir/build.make src/server/service/chatservice/CMakeFiles/chatservice.dir/depend
+	$(MAKE) -f src/server/service/chatservice/CMakeFiles/chatservice.dir/build.make src/server/service/chatservice/CMakeFiles/chatservice.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target chatservice"
+.PHONY : src/server/service/chatservice/CMakeFiles/chatservice.dir/all
+
+# Include target in all.
+all: src/server/service/chatservice/CMakeFiles/chatservice.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/server/service/chatservice/CMakeFiles/chatservice.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixiao/rpcIM/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 src/server/service/chatservice/CMakeFiles/chatservice.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yixiao/rpcIM/build/CMakeFiles 0
+.PHONY : src/server/service/chatservice/CMakeFiles/chatservice.dir/rule
+
+# Convenience name for target.
+chatservice: src/server/service/chatservice/CMakeFiles/chatservice.dir/rule
+
+.PHONY : chatservice
+
+# clean rule for target.
+src/server/service/chatservice/CMakeFiles/chatservice.dir/clean:
+	$(MAKE) -f src/server/service/chatservice/CMakeFiles/chatservice.dir/build.make src/server/service/chatservice/CMakeFiles/chatservice.dir/clean
+.PHONY : src/server/service/chatservice/CMakeFiles/chatservice.dir/clean
+
+# clean rule for target.
+clean: src/server/service/chatservice/CMakeFiles/chatservice.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory src/client
 
 # Convenience name for "all" pass in the directory.
@@ -196,7 +312,7 @@ src/client/preinstall:
 src/client/CMakeFiles/client.dir/all:
 	$(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/depend
 	$(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=1,2,3,4 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yixiao/rpcIM/build/CMakeFiles --progress-num=13,14,15,16 "Built target client"
 .PHONY : src/client/CMakeFiles/client.dir/all
 
 # Include target in all.

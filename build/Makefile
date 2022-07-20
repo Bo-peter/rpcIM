@@ -124,6 +124,32 @@ userservice/fast:
 .PHONY : userservice/fast
 
 #=============================================================================
+# Target rules for targets named friendservice
+
+# Build rule for target.
+friendservice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 friendservice
+.PHONY : friendservice
+
+# fast build rule for target.
+friendservice/fast:
+	$(MAKE) -f src/server/service/friendservice/CMakeFiles/friendservice.dir/build.make src/server/service/friendservice/CMakeFiles/friendservice.dir/build
+.PHONY : friendservice/fast
+
+#=============================================================================
+# Target rules for targets named chatservice
+
+# Build rule for target.
+chatservice: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chatservice
+.PHONY : chatservice
+
+# fast build rule for target.
+chatservice/fast:
+	$(MAKE) -f src/server/service/chatservice/CMakeFiles/chatservice.dir/build.make src/server/service/chatservice/CMakeFiles/chatservice.dir/build
+.PHONY : chatservice/fast
+
+#=============================================================================
 # Target rules for targets named client
 
 # Build rule for target.
@@ -145,6 +171,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... userservice"
+	@echo "... friendservice"
+	@echo "... chatservice"
 	@echo "... client"
 .PHONY : help
 

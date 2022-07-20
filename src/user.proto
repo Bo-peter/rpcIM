@@ -12,7 +12,7 @@ message ResultCode
 
 message LoginRequest
 {
-    bytes id = 1;
+    int32 id = 1;
     bytes pwd = 2;
 }
 
@@ -20,6 +20,8 @@ message LoginResponse
 {
     ResultCode result = 1;
     bool sucess = 2;
+    bytes chatserviceip = 3;
+    int32 chatserviceport =4;
 }
 
 message RegisterRequest

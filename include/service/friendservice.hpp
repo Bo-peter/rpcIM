@@ -2,7 +2,7 @@
 #include "friendmodel.hpp"
 #include "usermodel.hpp"
 
-class FriendService : public friend::FriendService
+class FriendService : public friends::FriendService
 {
 public:
     bool addFriend(int id,int friendid);

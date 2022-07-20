@@ -17,12 +17,26 @@ int UserService::reg(std::string name, std::string pwd)
     }
 }
 
-bool UserService::login(std::string id, std::string pwd)
+USER_ERROR UserService::login(int id, std::string pwd)
 {
-    std::cout << "doing local service: Login" << std::endl;
-    std::cout << "name:" << id << " pwd:" << pwd << std::endl;
-    return false;
+    User user = _userModel.query(id);
+    if (user.getId() == id && user.getPwd() == pwd)
+    {
+        if (user.getState() == "online")
+        {
+            return REPATE_ERROR;
+        }
+        else
+        {
+            return LOGIN_SUCCESS;
+        }
+    }
+    else
+    {
+        return INFO_ERROR;
+    }
 }
+
 void UserService::Register(::google::protobuf::RpcController *controller,
                            const ::user::RegisterRequest *request,
                            ::user::RegisterResponse *response,
@@ -46,8 +60,27 @@ void UserService::Register(::google::protobuf::RpcController *controller,
 }
 
 void UserService::Login(::google::protobuf::RpcController *controller,
-                        const ::user::RegisterRequest *request,
-                        ::user::RegisterResponse *response,
+                        const ::user::LoginRequest *request,
+                        ::user::LoginResponse *response,
                         ::google::protobuf::Closure *done)
 {
+    int id = request->id();
+    string pwd = request->pwd();
+    USER_ERROR err = login(id, pwd);
+    if (err == LOGIN_SUCCESS)
+    {
+        std::string ip = MprpcApplication::GetInstance().GetConfig().Load("chatserviceip");
+        uint16_t port = atoi(MprpcApplication::GetInstance().GetConfig().Load("chatserviceport").c_str());
+        response->mutable_result()->set_errcode(0);
+        response->set_chatserviceip(ip);
+        response->set_chatserviceport(port);
+    }
+    else
+    {
+        response->mutable_result()->set_errcode(1);
+        if (err == INFO_ERROR)
+            response->mutable_result()->set_errmsg("info_error");
+        else
+            response->mutable_result()->set_errmsg("repeat login");
+    }
 }

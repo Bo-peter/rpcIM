@@ -335,25 +335,9 @@ class LoginRequest :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kIdFieldNumber = 1,
     kPwdFieldNumber = 2,
+    kIdFieldNumber = 1,
   };
-  // bytes id = 1;
-  void clear_id();
-  const std::string& id() const;
-  void set_id(const std::string& value);
-  void set_id(std::string&& value);
-  void set_id(const char* value);
-  void set_id(const void* value, size_t size);
-  std::string* mutable_id();
-  std::string* release_id();
-  void set_allocated_id(std::string* id);
-  private:
-  const std::string& _internal_id() const;
-  void _internal_set_id(const std::string& value);
-  std::string* _internal_mutable_id();
-  public:
-
   // bytes pwd = 2;
   void clear_pwd();
   const std::string& pwd() const;
@@ -370,13 +354,22 @@ class LoginRequest :
   std::string* _internal_mutable_pwd();
   public:
 
+  // int32 id = 1;
+  void clear_id();
+  ::PROTOBUF_NAMESPACE_ID::int32 id() const;
+  void set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_id() const;
+  void _internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:user.LoginRequest)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr pwd_;
+  ::PROTOBUF_NAMESPACE_ID::int32 id_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_user_2eproto;
 };
@@ -488,9 +481,27 @@ class LoginResponse :
   // accessors -------------------------------------------------------
 
   enum : int {
+    kChatserviceipFieldNumber = 3,
     kResultFieldNumber = 1,
     kSucessFieldNumber = 2,
+    kChatserviceportFieldNumber = 4,
   };
+  // bytes chatserviceip = 3;
+  void clear_chatserviceip();
+  const std::string& chatserviceip() const;
+  void set_chatserviceip(const std::string& value);
+  void set_chatserviceip(std::string&& value);
+  void set_chatserviceip(const char* value);
+  void set_chatserviceip(const void* value, size_t size);
+  std::string* mutable_chatserviceip();
+  std::string* release_chatserviceip();
+  void set_allocated_chatserviceip(std::string* chatserviceip);
+  private:
+  const std::string& _internal_chatserviceip() const;
+  void _internal_set_chatserviceip(const std::string& value);
+  std::string* _internal_mutable_chatserviceip();
+  public:
+
   // .user.ResultCode result = 1;
   bool has_result() const;
   private:
@@ -515,13 +526,24 @@ class LoginResponse :
   void _internal_set_sucess(bool value);
   public:
 
+  // int32 chatserviceport = 4;
+  void clear_chatserviceport();
+  ::PROTOBUF_NAMESPACE_ID::int32 chatserviceport() const;
+  void set_chatserviceport(::PROTOBUF_NAMESPACE_ID::int32 value);
+  private:
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_chatserviceport() const;
+  void _internal_set_chatserviceport(::PROTOBUF_NAMESPACE_ID::int32 value);
+  public:
+
   // @@protoc_insertion_point(class_scope:user.LoginResponse)
  private:
   class _Internal;
 
   ::PROTOBUF_NAMESPACE_ID::internal::InternalMetadataWithArena _internal_metadata_;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr chatserviceip_;
   ::user::ResultCode* result_;
   bool sucess_;
+  ::PROTOBUF_NAMESPACE_ID::int32 chatserviceport_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_user_2eproto;
 };
@@ -996,64 +1018,24 @@ inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
 
 // LoginRequest
 
-// bytes id = 1;
+// int32 id = 1;
 inline void LoginRequest::clear_id() {
-  id_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  id_ = 0;
 }
-inline const std::string& LoginRequest::id() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 LoginRequest::_internal_id() const {
+  return id_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LoginRequest::id() const {
   // @@protoc_insertion_point(field_get:user.LoginRequest.id)
   return _internal_id();
 }
-inline void LoginRequest::set_id(const std::string& value) {
+inline void LoginRequest::_internal_set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  id_ = value;
+}
+inline void LoginRequest::set_id(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_id(value);
   // @@protoc_insertion_point(field_set:user.LoginRequest.id)
-}
-inline std::string* LoginRequest::mutable_id() {
-  // @@protoc_insertion_point(field_mutable:user.LoginRequest.id)
-  return _internal_mutable_id();
-}
-inline const std::string& LoginRequest::_internal_id() const {
-  return id_.GetNoArena();
-}
-inline void LoginRequest::_internal_set_id(const std::string& value) {
-  
-  id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
-}
-inline void LoginRequest::set_id(std::string&& value) {
-  
-  id_.SetNoArena(
-    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:user.LoginRequest.id)
-}
-inline void LoginRequest::set_id(const char* value) {
-  GOOGLE_DCHECK(value != nullptr);
-  
-  id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:user.LoginRequest.id)
-}
-inline void LoginRequest::set_id(const void* value, size_t size) {
-  
-  id_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:user.LoginRequest.id)
-}
-inline std::string* LoginRequest::_internal_mutable_id() {
-  
-  return id_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline std::string* LoginRequest::release_id() {
-  // @@protoc_insertion_point(field_release:user.LoginRequest.id)
-  
-  return id_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-}
-inline void LoginRequest::set_allocated_id(std::string* id) {
-  if (id != nullptr) {
-    
-  } else {
-    
-  }
-  id_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), id);
-  // @@protoc_insertion_point(field_set_allocated:user.LoginRequest.id)
 }
 
 // bytes pwd = 2;
@@ -1198,6 +1180,86 @@ inline void LoginResponse::_internal_set_sucess(bool value) {
 inline void LoginResponse::set_sucess(bool value) {
   _internal_set_sucess(value);
   // @@protoc_insertion_point(field_set:user.LoginResponse.sucess)
+}
+
+// bytes chatserviceip = 3;
+inline void LoginResponse::clear_chatserviceip() {
+  chatserviceip_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline const std::string& LoginResponse::chatserviceip() const {
+  // @@protoc_insertion_point(field_get:user.LoginResponse.chatserviceip)
+  return _internal_chatserviceip();
+}
+inline void LoginResponse::set_chatserviceip(const std::string& value) {
+  _internal_set_chatserviceip(value);
+  // @@protoc_insertion_point(field_set:user.LoginResponse.chatserviceip)
+}
+inline std::string* LoginResponse::mutable_chatserviceip() {
+  // @@protoc_insertion_point(field_mutable:user.LoginResponse.chatserviceip)
+  return _internal_mutable_chatserviceip();
+}
+inline const std::string& LoginResponse::_internal_chatserviceip() const {
+  return chatserviceip_.GetNoArena();
+}
+inline void LoginResponse::_internal_set_chatserviceip(const std::string& value) {
+  
+  chatserviceip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), value);
+}
+inline void LoginResponse::set_chatserviceip(std::string&& value) {
+  
+  chatserviceip_.SetNoArena(
+    &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
+  // @@protoc_insertion_point(field_set_rvalue:user.LoginResponse.chatserviceip)
+}
+inline void LoginResponse::set_chatserviceip(const char* value) {
+  GOOGLE_DCHECK(value != nullptr);
+  
+  chatserviceip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
+  // @@protoc_insertion_point(field_set_char:user.LoginResponse.chatserviceip)
+}
+inline void LoginResponse::set_chatserviceip(const void* value, size_t size) {
+  
+  chatserviceip_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+      ::std::string(reinterpret_cast<const char*>(value), size));
+  // @@protoc_insertion_point(field_set_pointer:user.LoginResponse.chatserviceip)
+}
+inline std::string* LoginResponse::_internal_mutable_chatserviceip() {
+  
+  return chatserviceip_.MutableNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline std::string* LoginResponse::release_chatserviceip() {
+  // @@protoc_insertion_point(field_release:user.LoginResponse.chatserviceip)
+  
+  return chatserviceip_.ReleaseNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+}
+inline void LoginResponse::set_allocated_chatserviceip(std::string* chatserviceip) {
+  if (chatserviceip != nullptr) {
+    
+  } else {
+    
+  }
+  chatserviceip_.SetAllocatedNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), chatserviceip);
+  // @@protoc_insertion_point(field_set_allocated:user.LoginResponse.chatserviceip)
+}
+
+// int32 chatserviceport = 4;
+inline void LoginResponse::clear_chatserviceport() {
+  chatserviceport_ = 0;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LoginResponse::_internal_chatserviceport() const {
+  return chatserviceport_;
+}
+inline ::PROTOBUF_NAMESPACE_ID::int32 LoginResponse::chatserviceport() const {
+  // @@protoc_insertion_point(field_get:user.LoginResponse.chatserviceport)
+  return _internal_chatserviceport();
+}
+inline void LoginResponse::_internal_set_chatserviceport(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  
+  chatserviceport_ = value;
+}
+inline void LoginResponse::set_chatserviceport(::PROTOBUF_NAMESPACE_ID::int32 value) {
+  _internal_set_chatserviceport(value);
+  // @@protoc_insertion_point(field_set:user.LoginResponse.chatserviceport)
 }
 
 // -------------------------------------------------------------------

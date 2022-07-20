@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package chat;
+
+enum EnMsgType
+{
+    LOGIN_MSG = 0;
+    LOGIN_MSG_ACK=1;
+    LOGINOUT_MSG =3;
+    ONE_CHAT_MSG =4;   
+    GROUP_CHAT_MSG=5; 
+
+}
+
+message MsgPackge{
+    EnMsgType type = 1;
+    int32 userid = 2;
+    int32 toid = 3;
+    int32 groupid = 4;
+    bytes msg = 5;
+    bool sucess = 6;
+}

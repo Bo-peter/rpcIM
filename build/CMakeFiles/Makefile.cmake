@@ -15,6 +15,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../src/client/CMakeLists.txt"
   "../src/server/CMakeLists.txt"
   "../src/server/service/CMakeLists.txt"
+  "../src/server/service/chatservice/CMakeLists.txt"
+  "../src/server/service/friendservice/CMakeLists.txt"
   "../src/server/service/userservice/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
@@ -47,11 +49,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/server/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/server/service/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/server/service/userservice/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/server/service/friendservice/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/server/service/chatservice/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/client/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "src/server/service/userservice/CMakeFiles/userservice.dir/DependInfo.cmake"
+  "src/server/service/friendservice/CMakeFiles/friendservice.dir/DependInfo.cmake"
+  "src/server/service/chatservice/CMakeFiles/chatservice.dir/DependInfo.cmake"
   "src/client/CMakeFiles/client.dir/DependInfo.cmake"
   )

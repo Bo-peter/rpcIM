@@ -12,8 +12,8 @@ bool FriendService::addFriend(int id, int friendid)
 }
 
 void FriendService::AddFriend(::google::protobuf::RpcController *controller,
-                           const ::firends::AddFriendRequest *request,
-                           ::firends::AddFriendResponse *response,
+                           const ::friends::AddFriendRequest *request,
+                           ::friends::AddFriendResponse *response,
                            ::google::protobuf::Closure *done)
 {
     int id = request->id();

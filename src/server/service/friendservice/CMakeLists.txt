@@ -1,6 +1,6 @@
 set(FRIEND_SRC_LIST friendservicemain.cpp
             ../../db/db.cpp
-            ../../../friend.pb.cc
+            ../../../friends.pb.cc
             ../../model/friendmodel.cpp
             ../../model/usermodel.cpp
             friendservice.cpp)
