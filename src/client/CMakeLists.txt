@@ -1,6 +1,7 @@
 set(SRC_LIST main.cc
             ../user.pb.cc
             ../friends.pb.cc
+            ../chat.pb.cc
             )
 
 add_executable(client ${SRC_LIST})

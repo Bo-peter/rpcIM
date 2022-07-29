@@ -125,6 +125,33 @@ client/fast:
 	cd /home/yixiao/rpcIM/build && $(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
+__/chat.pb.o: __/chat.pb.cc.o
+
+.PHONY : __/chat.pb.o
+
+# target to build an object file
+__/chat.pb.cc.o:
+	cd /home/yixiao/rpcIM/build && $(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/__/chat.pb.cc.o
+.PHONY : __/chat.pb.cc.o
+
+__/chat.pb.i: __/chat.pb.cc.i
+
+.PHONY : __/chat.pb.i
+
+# target to preprocess a source file
+__/chat.pb.cc.i:
+	cd /home/yixiao/rpcIM/build && $(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/__/chat.pb.cc.i
+.PHONY : __/chat.pb.cc.i
+
+__/chat.pb.s: __/chat.pb.cc.s
+
+.PHONY : __/chat.pb.s
+
+# target to generate assembly for a file
+__/chat.pb.cc.s:
+	cd /home/yixiao/rpcIM/build && $(MAKE) -f src/client/CMakeFiles/client.dir/build.make src/client/CMakeFiles/client.dir/__/chat.pb.cc.s
+.PHONY : __/chat.pb.cc.s
+
 __/friends.pb.o: __/friends.pb.cc.o
 
 .PHONY : __/friends.pb.o
@@ -215,6 +242,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... client"
 	@echo "... edit_cache"
+	@echo "... __/chat.pb.o"
+	@echo "... __/chat.pb.i"
+	@echo "... __/chat.pb.s"
 	@echo "... __/friends.pb.o"
 	@echo "... __/friends.pb.i"
 	@echo "... __/friends.pb.s"

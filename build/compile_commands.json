@@ -128,5 +128,10 @@
   "directory": "/home/yixiao/rpcIM/build/src/client",
   "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/client.dir/__/friends.pb.cc.o -c /home/yixiao/rpcIM/src/friends.pb.cc",
   "file": "/home/yixiao/rpcIM/src/friends.pb.cc"
+},
+{
+  "directory": "/home/yixiao/rpcIM/build/src/client",
+  "command": "/usr/bin/g++   -I/home/yixiao/rpcIM/include -I/home/yixiao/rpcIM/include/mprpc -I/home/yixiao/rpcIM/include/model -I/home/yixiao/rpcIM/include/redis -I/home/yixiao/rpcIM/include/db -I/home/yixiao/rpcIM/include/service -I/home/yixiao/rpcIM/src/client  -g -g   -o CMakeFiles/client.dir/__/chat.pb.cc.o -c /home/yixiao/rpcIM/src/chat.pb.cc",
+  "file": "/home/yixiao/rpcIM/src/chat.pb.cc"
 }
 ]

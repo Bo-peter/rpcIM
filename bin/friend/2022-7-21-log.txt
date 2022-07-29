@@ -1,0 +1,2 @@
+11:33:7 =>[info] service_name:FriendService
+11:33:7 =>[info] method_name:AddFriend

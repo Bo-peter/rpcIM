@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/yixiao/rpcIM/src/chat.pb.cc" "/home/yixiao/rpcIM/build/src/client/CMakeFiles/client.dir/__/chat.pb.cc.o"
   "/home/yixiao/rpcIM/src/friends.pb.cc" "/home/yixiao/rpcIM/build/src/client/CMakeFiles/client.dir/__/friends.pb.cc.o"
   "/home/yixiao/rpcIM/src/user.pb.cc" "/home/yixiao/rpcIM/build/src/client/CMakeFiles/client.dir/__/user.pb.cc.o"
   "/home/yixiao/rpcIM/src/client/main.cc" "/home/yixiao/rpcIM/build/src/client/CMakeFiles/client.dir/main.cc.o"
